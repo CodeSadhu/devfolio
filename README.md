@@ -39,7 +39,7 @@ Is a multi-platform portfolio for developers available for mobile, windows and w
 
 ## 🧑 Author
 
-#### Muhammad Hamza
+#### Atharva Patwardhan
 [![LinkedIn Link](https://img.shields.io/badge/Connect-Hamza-blue.svg?logo=linkedin&longCache=true&style=social&label=Connect
 )](https://www.linkedin.com/in/mhmzdev)
 

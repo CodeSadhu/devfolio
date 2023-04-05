@@ -55,14 +55,14 @@ class HomeMobile extends StatelessWidget {
                 ),
                 Space.y!,
                 Text(
-                  "Muhammad",
+                  "Atharva",
                   style: AppText.h3!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
                   ),
                 ),
                 Text(
-                  "Hamza",
+                  "Patwardhan",
                   style: AppText.h3b!.copyWith(
                     height: 1,
                   ),

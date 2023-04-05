@@ -102,7 +102,7 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Name",
-                                information: "Muhammad Hamza",
+                                information: "Atharva Patwardhan",
                               ),
                               AboutMeData(
                                 data: "Age",
@@ -116,11 +116,11 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Email",
-                                information: "hamza.6.shakeel@gmail.com",
+                                information: "patwardhanatharva6@gmail.com",
                               ),
                               AboutMeData(
                                 data: "From",
-                                information: "Attock, PK",
+                                information: "Pune, India",
                               ),
                             ],
                           ),
@@ -133,29 +133,19 @@ class AboutDesktop extends StatelessWidget {
                             height: AppDimensions.normalize(13),
                             width: AppDimensions.normalize(40),
                             child: OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                side: BorderSide(color: AppTheme.c!.primary!),
+                              ),
                               onPressed: () =>
                                   html.window.open(StaticUtils.resume, 'pdf'),
-                              child: const Text(
+                              child: Text(
                                 "Resume",
+                                style: TextStyle(
+                                  color: AppTheme.light.primary,
+                                ),
                               ),
                             ),
                           ),
-                          Space.x1!,
-                          Container(
-                            color: Colors.grey[900]!,
-                            width: AppDimensions.normalize(30),
-                            height: AppDimensions.normalize(0.5),
-                          ),
-                          ...WorkUtils.logos.asMap().entries.map(
-                                (e) => Expanded(
-                                  child: CommunityIconBtn(
-                                    icon: e.value,
-                                    link: WorkUtils.communityLinks[e.key],
-                                    height:
-                                        WorkUtils.communityLogoHeight[e.key],
-                                  ),
-                                ),
-                              )
                         ],
                       ),
                     ],

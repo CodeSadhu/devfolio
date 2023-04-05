@@ -67,14 +67,14 @@ class HomeTab extends StatelessWidget {
                 ),
                 Space.y1!,
                 Text(
-                  "Muhammad",
+                  "Atharva",
                   style: AppText.h1!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
                   ),
                 ),
                 Text(
-                  "Hamza",
+                  "Patwardhan",
                   style: AppText.h1b!.copyWith(
                     height: 1,
                   ),
