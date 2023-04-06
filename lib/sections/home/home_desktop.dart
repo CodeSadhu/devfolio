@@ -93,6 +93,7 @@ class HomeDesktop extends StatelessWidget {
                         color: AppTheme.c!.primary!,
                       ),
                       AnimatedTextKit(
+                        repeatForever: true,
                         animatedTexts: [
                           TyperAnimatedText(
                             ' Mobile App Developer',
@@ -101,11 +102,6 @@ class HomeDesktop extends StatelessWidget {
                           ),
                           TyperAnimatedText(
                             ' Flutter Enthusiast',
-                            speed: const Duration(milliseconds: 50),
-                            textStyle: AppText.b1,
-                          ),
-                          TyperAnimatedText(
-                            ' A friend :)',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),

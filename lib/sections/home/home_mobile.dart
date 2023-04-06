@@ -75,6 +75,7 @@ class HomeMobile extends StatelessWidget {
                       color: AppTheme.c!.primary!,
                     ),
                     AnimatedTextKit(
+                      repeatForever: true,
                       animatedTexts: [
                         TyperAnimatedText(
                           ' Flutter Developer',
@@ -86,13 +87,7 @@ class HomeMobile extends StatelessWidget {
                           speed: const Duration(milliseconds: 50),
                           textStyle: AppText.b1,
                         ),
-                        TyperAnimatedText(
-                          ' A friend :)',
-                          speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1,
-                        ),
                       ],
-                      repeatForever: true,
                       isRepeatingAnimation: true,
                     ),
                   ],

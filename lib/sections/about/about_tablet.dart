@@ -102,7 +102,7 @@ class AboutTab extends StatelessWidget {
                   ),
                   AboutMeData(
                     data: "Age",
-                    information: "24",
+                    information: "23",
                   ),
                 ],
               ),

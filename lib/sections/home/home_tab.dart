@@ -90,6 +90,7 @@ class HomeTab extends StatelessWidget {
                         color: AppTheme.c!.primary!,
                       ),
                       AnimatedTextKit(
+                        repeatForever: true,
                         animatedTexts: [
                           TyperAnimatedText(
                             ' Flutter Developer',
@@ -98,11 +99,6 @@ class HomeTab extends StatelessWidget {
                           ),
                           TyperAnimatedText(
                             ' UI/UX Enthusiast',
-                            speed: const Duration(milliseconds: 50),
-                            textStyle: AppText.b1,
-                          ),
-                          TyperAnimatedText(
-                            ' A friend :)',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),
