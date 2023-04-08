@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:folio/configs/configs.dart';
 import 'package:folio/utils/about_utils.dart';
 import 'package:folio/utils/utils.dart';
-import 'package:folio/utils/work_utils.dart';
 
 import 'package:folio/widget/custom_text_heading.dart';
 import 'package:universal_html/html.dart' as html;
@@ -10,7 +9,6 @@ import 'package:universal_html/html.dart' as html;
 import 'package:flutter/material.dart';
 import 'package:folio/constants.dart';
 import 'package:folio/widget/about_me_data.dart';
-import 'package:folio/widget/community_button.dart';
 import 'package:folio/widget/tech_widget.dart';
 
 class AboutMobile extends StatelessWidget {
@@ -78,8 +76,8 @@ class AboutMobile extends StatelessWidget {
             ),
           ),
           Space.y!,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Wrap(
+            // mainAxisAlignment: MainAxisAlignment.center,
             children: kTools
                 .map(
                   (e) => ToolTechWidget(techName: e),
@@ -102,29 +100,25 @@ class AboutMobile extends StatelessWidget {
             data: "Email",
             information: "patwardhanatharva6@gmail.com",
           ),
+          const AboutMeData(
+            data: "From",
+            information: "Pune, India",
+          ),
+          const AboutMeData(
+            data: "Age",
+            information: "23",
+          ),
           Space.y!,
           OutlinedButton(
-              child: const Text("Resume"),
+              child: Text(
+                "Resume",
+                style: AppText.l1b,
+              ),
               onPressed: () {
                 kIsWeb
                     ? html.window.open(StaticUtils.resume, "pdf")
                     : openURL(StaticUtils.resume);
               }),
-          Space.y!,
-          Wrap(
-              alignment: WrapAlignment.center,
-              crossAxisAlignment: WrapCrossAlignment.center,
-              children: WorkUtils.logos
-                  .asMap()
-                  .entries
-                  .map(
-                    (e) => CommunityIconBtn(
-                      icon: e.value,
-                      link: WorkUtils.communityLinks[e.key],
-                      height: WorkUtils.communityLogoHeight[e.key],
-                    ),
-                  )
-                  .toList()),
         ],
       ),
     );

@@ -147,8 +147,11 @@ class ProjectCardState extends State<ProjectCard> {
               child: FittedBox(
                 fit: BoxFit.fill,
                 child: widget.banner != null
-                    ? Image.asset(
-                        widget.banner!,
+                    ? ClipRRect(
+                        borderRadius: BorderRadius.circular(30),
+                        child: Image.asset(
+                          widget.banner!,
+                        ),
                       )
                     : Container(),
               ),

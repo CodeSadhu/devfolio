@@ -1,35 +1,26 @@
 class ProjectUtils {
   static const List<String> banners = [
-    // "assets/projects/snackbar.png",
-    // "assets/projects/quranB.png",
-    // "assets/projects/medkitB.png",
-    // "assets/projects/hereiamB.png",
-    // "assets/projects/covidB.png",
+    "assets/projects/sobot.png",
+    "assets/projects/olsub.png",
   ];
 
   static const List<String> icons = [
-    // "assets/projects/flutter.png",
-    // "assets/projects/quran.png",
-    // "assets/projects/medkit.png",
-    // "assets/projects/hereiam.png",
-    // "assets/projects/covid.png",
-    // "assets/projects/messenger.png",
-    // "assets/projects/flutter.png",
-    // "assets/projects/earbender.png",
-    // "assets/projects/java.png",
-    // "assets/projects/android.png",
-    // "assets/services/open_b.png",
+    "assets/projects/flutter.png",
+    "assets/projects/flutter.png",
   ];
 
   static const List<String> titles = [
-    // "Awesome Snackbar Dart Package",
+    "Sobot - A WhatsApp Storefront",
+    "Olsub - An OTT Aggregator Platform",
   ];
 
   static const List<String> description = [
-    // "A very unique dart package to uplift the snackbar experience in flutter. Available at pub.dev now!",
+    'Sobot is a chatbot-enabled WhatsApp Storefront that allows D2C brands to quickly and easily serve their customers with the right products without the hassle of an endless scrolling through a large catalog. Available on Google Play!',
+    'A very unique platform where you could search any movie/series you wanted to watch and the app listed all streaming services that you can watch it on. Tap to see app screens/demo!',
   ];
 
   static const List<String> links = [
-    // "https://github.com/CodeSadhu/MedKit-Pharmacy-App-Using-Flutter",
+    'https://play.google.com/store/apps/details?id=in.effcode.sobot',
+    'https://drive.google.com/drive/folders/1OtVtm6Lihqhg--eAFVe8UbisiCWW6SaM?usp=share_link',
   ];
 }

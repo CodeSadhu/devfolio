@@ -44,7 +44,7 @@ class AppText {
     b2b = b2!.copyWith(fontWeight: b);
 
     l1 = baseStyle.copyWith(fontSize: AppDimensions.font(6));
-    l1b = l1!.copyWith(fontWeight: b);
+    l1b = l1!.copyWith(fontWeight: b, color: AppTheme.c!.primary);
 
     l2 = baseStyle.copyWith(fontSize: AppDimensions.font(4));
     l2b = l2!.copyWith(fontWeight: b);

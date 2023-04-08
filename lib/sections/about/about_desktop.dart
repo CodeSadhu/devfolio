@@ -83,7 +83,7 @@ class AboutDesktop extends StatelessWidget {
                         ),
                       ),
                       Space.y!,
-                      Row(
+                      Wrap(
                         children: kTools
                             .map((e) => ToolTechWidget(
                                   techName: e,
@@ -106,7 +106,7 @@ class AboutDesktop extends StatelessWidget {
                               ),
                               AboutMeData(
                                 data: "Age",
-                                information: "24",
+                                information: "23",
                               ),
                             ],
                           ),

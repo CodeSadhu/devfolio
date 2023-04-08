@@ -39,6 +39,7 @@ dependencies:
 
   # cache
   shared_preferences: ^2.0.6
+  flutter_svg: ^0.23.0+1
 
 
 dev_dependencies:
@@ -60,8 +61,7 @@ flutter:
     - assets/photos/
     - assets/services/
     - assets/projects/
-
-    - data.json
+    - assets/svgs/
 
   fonts:
     - family: Agustina
