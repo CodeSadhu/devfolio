@@ -76,8 +76,8 @@ class AboutMobile extends StatelessWidget {
             ),
           ),
           Space.y!,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Wrap(
+            // mainAxisAlignment: MainAxisAlignment.center,
             children: kTools
                 .map(
                   (e) => ToolTechWidget(techName: e),
@@ -100,9 +100,20 @@ class AboutMobile extends StatelessWidget {
             data: "Email",
             information: "patwardhanatharva6@gmail.com",
           ),
+          const AboutMeData(
+            data: "From",
+            information: "Pune, India",
+          ),
+          const AboutMeData(
+            data: "Age",
+            information: "23",
+          ),
           Space.y!,
           OutlinedButton(
-              child: const Text("Resume"),
+              child: Text(
+                "Resume",
+                style: AppText.l1b,
+              ),
               onPressed: () {
                 kIsWeb
                     ? html.window.open(StaticUtils.resume, "pdf")

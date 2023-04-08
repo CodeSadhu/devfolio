@@ -78,7 +78,7 @@ class AboutTab extends StatelessWidget {
               color: AppTheme.c!.primary,
             ),
           ),
-          Row(
+          Wrap(
             children: kTools
                 .map(
                   (e) => ToolTechWidget(techName: e),
@@ -113,6 +113,10 @@ class AboutTab extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
                   AboutMeData(
+                    data: "Name",
+                    information: "Atharva Patwardhan",
+                  ),
+                  AboutMeData(
                     data: "Email",
                     information: "patwardhanatharva6@gmail.com",
                   ),
@@ -120,50 +124,56 @@ class AboutTab extends StatelessWidget {
                     data: "From",
                     information: "Pune, India",
                   ),
+                  AboutMeData(
+                    data: "Age",
+                    information: "23",
+                  ),
                 ],
               ),
             ],
           ),
           Space.y1!,
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
                 height: AppDimensions.normalize(13),
                 width: AppDimensions.normalize(40),
                 child: OutlinedButton(
                   onPressed: () => html.window.open(StaticUtils.resume, 'pdf'),
-                  child: const Text(
+                  child: Text(
                     "Resume",
+                    style: AppText.l1b,
                   ),
                 ),
               ),
-              Space.x!,
-              Container(
-                width: width * 0.05,
-                decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(
-                      color: Colors.grey[900]!,
-                      width: 2.0,
-                    ),
-                  ),
-                ),
-              ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                    children: WorkUtils.logos
-                        .asMap()
-                        .entries
-                        .map(
-                          (e) => CommunityIconBtn(
-                            icon: e.value,
-                            link: WorkUtils.communityLinks[e.key],
-                            height: WorkUtils.communityLogoHeight[e.key],
-                          ),
-                        )
-                        .toList()),
-              ),
+              // Space.x!,
+              // Container(
+              //   width: width * 0.05,
+              //   decoration: BoxDecoration(
+              //     border: Border(
+              //       bottom: BorderSide(
+              //         color: Colors.grey[900]!,
+              //         width: 2.0,
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // SingleChildScrollView(
+              //   scrollDirection: Axis.horizontal,
+              //   child: Row(
+              //       children: WorkUtils.logos
+              //           .asMap()
+              //           .entries
+              //           .map(
+              //             (e) => CommunityIconBtn(
+              //               icon: e.value,
+              //               link: WorkUtils.communityLinks[e.key],
+              //               height: WorkUtils.communityLogoHeight[e.key],
+              //             ),
+              //           )
+              //           .toList()),
+              // ),
             ],
           )
         ],
