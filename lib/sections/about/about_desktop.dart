@@ -4,9 +4,7 @@ import 'package:folio/constants.dart';
 import 'package:folio/utils/about_utils.dart';
 
 import 'package:folio/utils/utils.dart';
-import 'package:folio/utils/work_utils.dart';
 import 'package:folio/widget/about_me_data.dart';
-import 'package:folio/widget/community_button.dart';
 import 'package:folio/widget/custom_text_heading.dart';
 import 'package:folio/widget/tech_widget.dart';
 
@@ -27,9 +25,9 @@ class AboutDesktop extends StatelessWidget {
           const CustomSectionHeading(
             text: '\nAbout Me',
           ),
-          const CustomSectionSubHeading(
-            text: 'Get to know me :)',
-          ),
+          // const CustomSectionSubHeading(
+          //   text: 'Get to know me :)',
+          // ),
           Space.y1!,
           Row(
             children: [
@@ -65,7 +63,7 @@ class AboutDesktop extends StatelessWidget {
                         style: AppText.b2!.copyWith(
                           height: 2,
                           letterSpacing: 1.1,
-                          fontFamily: 'Montserrat',
+                          fontFamily: 'Poppins',
                           fontSize: AppDimensions.normalize(5),
                         ),
                         textAlign: TextAlign.justify,
@@ -78,8 +76,9 @@ class AboutDesktop extends StatelessWidget {
                       Space.y!,
                       Text(
                         'Technologies I have worked with:',
-                        style: AppText.l1!.copyWith(
+                        style: AppText.b1!.copyWith(
                           color: AppTheme.c!.primary,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                       Space.y!,
@@ -95,11 +94,11 @@ class AboutDesktop extends StatelessWidget {
                         color: Colors.grey[800],
                         thickness: AppDimensions.normalize(0.5),
                       ),
-                      Row(
+                      const Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
+                            children: [
                               AboutMeData(
                                 data: "Name",
                                 information: "Atharva Patwardhan",
@@ -110,10 +109,10 @@ class AboutDesktop extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const Spacer(),
+                          Spacer(),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
+                            children: [
                               AboutMeData(
                                 data: "Email",
                                 information: "patwardhanatharva6@gmail.com",

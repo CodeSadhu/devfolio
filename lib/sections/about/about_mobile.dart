@@ -25,9 +25,9 @@ class AboutMobile extends StatelessWidget {
           const CustomSectionHeading(
             text: '\nAbout Me',
           ),
-          const CustomSectionSubHeading(
-            text: 'Get to know me :)',
-          ),
+          // const CustomSectionSubHeading(
+          //   text: 'Get to know me :)',
+          // ),
           Space.y1!,
           Image.asset(
             StaticUtils.mobilePhoto,

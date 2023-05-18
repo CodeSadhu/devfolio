@@ -96,12 +96,22 @@ class HomeDesktop extends StatelessWidget {
                         repeatForever: true,
                         animatedTexts: [
                           TyperAnimatedText(
-                            ' Mobile App Developer',
+                            ' Software Engineer',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),
                           TyperAnimatedText(
-                            ' Flutter Enthusiast',
+                            ' Freelancer',
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: AppText.b1,
+                          ),
+                          TyperAnimatedText(
+                            ' Flutter Developer',
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: AppText.b1,
+                          ),
+                          TyperAnimatedText(
+                            ' Tech Enthusiast',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),
