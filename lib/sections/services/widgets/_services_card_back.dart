@@ -23,9 +23,6 @@ class _ServiceCardBackWidget extends StatelessWidget {
             ),
           ),
         ),
-        // Divider(
-        //   color: appProvider.isDark ? Colors.white : Colors.black38,
-        // ),
         Padding(
           padding: const EdgeInsets.only(bottom: 10),
           child: Container(
@@ -47,7 +44,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
               ),
             ),
           ),
-        )
+        ),
       ],
     );
   }

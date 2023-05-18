@@ -29,11 +29,11 @@ class AboutTab extends StatelessWidget {
               text: '\nAbout Me',
             ),
           ),
-          const Center(
-            child: CustomSectionSubHeading(
-              text: 'Get to know me :)',
-            ),
-          ),
+          // const Center(
+          //   child: CustomSectionSubHeading(
+          //     text: 'Get to know me :)',
+          //   ),
+          // ),
           Space.y1!,
           Image.asset(
             StaticUtils.mobilePhoto,
@@ -93,9 +93,9 @@ class AboutTab extends StatelessWidget {
           Space.y!,
           Row(
             children: [
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   AboutMeData(
                     data: "Name",
                     information: "Atharva Patwardhan",
@@ -109,9 +109,9 @@ class AboutTab extends StatelessWidget {
               SizedBox(
                 width: width > 710 ? width * 0.2 : width * 0.05,
               ),
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   AboutMeData(
                     data: "Name",
                     information: "Atharva Patwardhan",

@@ -12,14 +12,14 @@ class ToolTechWidget extends StatelessWidget {
     return Row(
       children: [
         Icon(
-          Icons.play_arrow,
+          Icons.play_arrow_rounded,
           color: AppTheme.c!.primary,
-          size: AppDimensions.normalize(6),
+          size: AppDimensions.normalize(8),
         ),
         Text(
           " $techName ",
           style: AppText.l1b,
-        )
+        ),
       ],
     );
   }

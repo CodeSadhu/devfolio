@@ -25,7 +25,7 @@ class ServiceDesktopState extends State<ServiceDesktop> {
           // const CustomSectionSubHeading(
           //   text: 'I may not be perfect but surely I\'m of some use :)\n\n',
           // ),
-          Space.y!,
+          Space.y2!,
           Wrap(
             spacing: width * 0.05,
             runSpacing: height * 0.05,

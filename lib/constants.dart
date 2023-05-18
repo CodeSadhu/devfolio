@@ -7,9 +7,10 @@ void openURL(String url) => launchUrl(
 
 // Tools & Tech
 final kTools = [
-  "Flutter",
-  "Angular",
-  "Django",
-  "Java + AWT/Swing",
-  "Bootstrap",
+  'Flutter',
+  'Angular',
+  'Django',
+  'Java',
+  'Bootstrap',
+  'HTML/CSS/JS'
 ];
