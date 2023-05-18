@@ -21,9 +21,9 @@ class ProjectUtils {
   ];
 
   static const List<String> description = [
-    'Sobot is a chatbot-enabled WhatsApp Storefront that allows D2C brands to quickly and easily serve their customers with the right products without the hassle of an endless scrolling through a large catalog. Available on Google Play!',
+    'Sobot is a chatbot-enabled WhatsApp Storefront that allows D2C brands to quickly and easily serve their customers with the right products without the hassle of an endless scrolling through a large catalog.!',
     'A very unique platform where you could search any movie/series you wanted to watch and the app listed all streaming services that you can watch it on. Tap to see app screens/demo!',
-    'Normie is a powerful Dart package that provides a suite of commonly used utility methods to aid Flutter developers in their day-to-day tasks. It offers a collection of features such as date formatters, validators, string manipulation functions, color generators, etc.',
+    'Normie is a powerful Dart package that provides a suite of commonly used utility methods to aid Flutter developers in their day-to-day tasks.',
     'The Card widget in Flutter applies shadows to the bottom and left of the card. The package Carded provides a widget - CardyContainer, which is instead a replacement Card with shadows on all four edges',
   ];
 
